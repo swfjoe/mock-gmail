@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import EmailHeaderRows from "./Components/EmailHeaderRows";
+import {useState} from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    const [focusEmail, setFocusEmail] = useState();
+    const [compose, setCompose] = useState(false);
+
+    return (
+        <div className="App">
+            <header className="App-header">
+                <EmailHeaderRows
+                    focusEmail={focusEmail}
+                    setFocusEmail={setFocusEmail}
+                    compose={compose}
+                    setCompose={setCompose}
+                />
+            </header>
+        </div>
+    );
 }
 
 export default App;

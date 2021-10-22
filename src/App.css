@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: darkseagreen;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +22,62 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 100px;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.ComposeButton {
+  background: darkslategrey;
+  font-weight: bold;
+  font-size: 36px;
+  color: white;
+  align-self: flex-start;
+  width: 360px;
+  height: 60px;
+  margin: -40px 0px 10px 110px;
+}
+
+.EmailHeaderContainer {
+  padding: 60px 0px;
+  width: 95%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.EmailHeaderRow {
+  color: black;
+  padding: 10px 100px;
+  margin: 10px;
+  width: 90%;
+}
+
+.EmailHeaderRowContainer {
+  align-self: center;
+  border: 3px black solid;
+  margin: 3px 0;
+  justify-content: space-between;
+  display: flex;
+  padding: 0px;
+  background: lightgrey;
+  width: 90%;
+}
+
+.FocusEmail {
+  border: 2px darkslategrey solid;
+  padding: 20px;
+}
+
+.FocusEmailContainer {
+  align-self: center;
+  border: 3px black solid;
+  display: flex;
+  flex-direction: column;
+  background: lightgrey;
+  width: 90%;
 }
 
 @keyframes App-logo-spin {
